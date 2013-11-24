@@ -1,1 +1,19 @@
-<h1>Users New Route reached</h1>
+<h1>Sign Up</h1>
+<div class="panel callout">
+  <form>
+  	<label>Email</label>
+  	<div class="small-6">
+  		{{view Ember.TextField valueBinding="email" name="email" placeholder="myemailaddress@gradeaid.com"}}
+  	</div>
+  	<label>Password</label>
+  	<div class="small-6">
+  		{{view Ember.TextField valueBinding="password" name="password" placeholder="create a password"}}
+  	</div>
+  	<label>Password Confirmation</label>
+  	<div class="small-6">
+  		{{view Ember.TextField valueBinding="passwordcon" name="passwordcon" placeholder="retype password"}}
+  	</div>
+  	<button class="button" {{action 'save'}}>Submit</button>
+  	<button class="button alert" {{action 'cancel'}}>Cancel</button>
+  <form>
+</div>
