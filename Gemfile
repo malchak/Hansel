@@ -23,6 +23,7 @@ gem 'jquery-rails'
 
 # User Ember.js to handle front end achitecture
 gem 'ember-rails'
+gem 'ember-source', '1.2.0'
 
 # User active model serializers for json output
 gem "active_model_serializers"
